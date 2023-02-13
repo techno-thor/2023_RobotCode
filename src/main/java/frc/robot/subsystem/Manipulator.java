@@ -127,6 +127,8 @@ public class Manipulator {
     /**
      * Enable Arm Angle PID control of the Manipulator.
      * @param position Target angle via preset positions.
+     * 
+     * @see Manipulator.Position
      */
     public static void goToAngle(Position position) {
         goToAngle(position.angle);

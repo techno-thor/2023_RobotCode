@@ -141,6 +141,8 @@ public class Elevator {
     /**
      * Enable Lift Height PID control of the Elevator.
      * @param position Target height via preset positions.
+     * 
+     * @see Elevator.Position
      */
     public static void goToHeight(Position position) {
         goToHeight(position.height);
