@@ -52,18 +52,20 @@ public class Manipulator {
 
     /**
      * Read whether the Arm is extended.
+     * 
      * @return True if the Arm is set to extended.
      */
     public static boolean isArmExtended() { return mIsArmExtended; }
 
-    /** Enable Arm Angle PID to extend the Arm. */
+    /** Extend the Arm. */
     public static void extendArm() { mIsArmExtended = true; }
 
-    /** Enable Arm Angle PID to retract the Arm. */
+    /** Retract the Arm. */
     public static void retractArm() { mIsArmExtended = false; }
 
     /**
      * Read whether the Grip is open.
+     * 
      * @return True if the Grip is set to open.
      */
     public static boolean isGripOpen() { return mIsGripOpen; }
