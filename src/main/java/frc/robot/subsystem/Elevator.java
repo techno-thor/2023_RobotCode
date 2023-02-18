@@ -66,6 +66,13 @@ public class Elevator {
         Console.logMsg("Configuring Motor NeutralModes...");
         mtrLift.setNeutralMode(NeutralMode.Brake);
 
+        //Configure motor soft limits FIXME: Find Lift soft limit positions 
+        Console.logMsg("Configuring Motor Soft Limits...");
+        mtrLift.configReverseSoftLimitThreshold(0.0);
+        mtrLift.configForwardSoftLimitThreshold(1.0);
+        mtrLift.configReverseSoftLimitEnable(true);
+        mtrLift.configForwardSoftLimitEnable(true);
+
         //Configure Sensors FIXME: Determine Lift distancePerPulse
         Console.logMsg("Configuring Sensors...");
         encLift.configDistancePerPulse(1.0);
